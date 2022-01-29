@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class Box extends Component {
+  constructor(props){
+  super(props)
+  this.state = {
+    color: 'black'
+  }}
+
+  handleChange = (event) => {
+    this.setState({color: event.target.value})
+  }
+  render() {
+    
+
+
+
+    return (
+      <section className='container'>
+        <input type="text" value={this.state.color} onChange={this.handleChange} className='set-order'/>
+      <div style = {{width:'50vh', height:'50vh', margin:'50px 30px', backgroundColor:this.state.color}}>
+        
+      </div>
+      </section>
+    );
+  }
 }
 
-export default App;
+export default Box
