@@ -44,7 +44,7 @@ const Grid = () => {
        <Form.Group >
        <article className='innerSection '>
       <div style = {{backgroundColor: color}} className='block-style '></div>
-      <input type="text" value={color}  onChange={e=>setColor(e.target.value)}  className='input-style ' placeholder='Ex: black or #453455'>
+      <input type="text" value={color}  onChange={e=>setColor(e.target.value)}  className='input-style ' placeholder='Name, RGB ,HEX ,HSL ,RGBA, HSLA'>
 
       </input>
   </article>
