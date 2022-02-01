@@ -1,16 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+body{
+
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+}
 
 
 
-.container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.title-style{
+font-family: 'Libre Baskerville', serif;
+color: #130f0f; 
+padding: 2%;
+font-size: 10vh;
+margin: 20px ;
+text-align: center;
+font-weight: bolder;
+
+ /* background-color: rgb(43, 226, 134);   */
+
+
+}
+/* Estilos para la grilla principal */
+
+.bigSection{
+
+  border-radius: 20px;
+ padding: 20px ;
+
+margin: auto;
+ background-color: #52459F;
+ width: 50%;
+ 
+  
+}
+
+
+
+.innerSection{
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+ 
+  display: grid;
+  grid-template-columns:4fr 8fr ;
+  justify-items: center;
   align-items: center;
+  padding: 4%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+ width: 100%;
+ text-align: center;
+
+
 }
 
-.set-order{
-  margin-top: 10vh;
-  width: 45%;
-  text-align: center;
-  padding: 1vh;
+
+.block-style{
+  width: 20vh;
+  height: 20vh;
+
+box-shadow:  5px  3px 10px rgb(145, 145, 145);
+
+
 }
+
+.input-style{
+
+text-align: center;
+margin-left: 10px;
+border: none;
+width: 100%;
+background-color: #130f0f;
+color: #ffffff;
+font-family:'Montserrat', sans-serif ;
+padding: 2%;
+text-decoration: none;
+border-radius: 10px;
+
+
+ 
+}
+
+.input-style:focus{
+
+border: none;
+outline: none;
+}
+
+
+
+.boton{
+ background-color: #85EAF6;
+padding: 8px;
+border-radius: 100px;
+border: none;
+font-family: 'Montserrat', sans-serif;
+
+}
+.boton:hover{
+  background-color: #000000;
+  color: #85EAF6;;
+
+}
+
+
+/* Style for Colour cards */
+
+
+.section4cards{
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  margin-top:10vh;
+  justify-items: center;
+
+}
+
+.titleCardStyle{
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.deleteBtn{
+  background-color: #fa6767;
+  padding: 8px;
+  border-radius: 100px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  width: 20%;
+margin-bottom: 8px;
+margin-right: 5px;
+
+  
+  
+
+}
+
+.deleteBtn:hover{
+  background-color: #000000;
+  color: #fa6767;
+}
+
+.block-style4card{
+  width: 30vh;
+  height: 30vh;
+  border-radius: 100%;
+  display: flex;
+
+  box-shadow:  5px  3px 10px rgb(145, 145, 145);
+
+}
+
+.card-style{
+  width: 50vh;
+  height: 50vh;
+  box-shadow:  5px  3px 10px rgb(145, 145, 145);
+margin-top: 5vh;
+  
+}
+
+.card-style:hover{
+ 
+  box-shadow:  8px  6px 40px #130f0f;
+
+}
+
+
+
+/* media querys */
+
+@media  (max-width: 576px) { 
+ 
+.title-style{
+
+font-size: 30px;
+
+
+margin-bottom: 30px;
+
+
+
+ 
+}
+/* Estilos para la grilla principal */
+
+.bigSection{
+padding: 8px ;
+ width: 90%;
+ margin: auto;
+ 
+  
+}
+
+.innerSection{
+display: flex;
+flex-direction: column;
+
+
+
+}
+
+.block-style{
+  width: 15vh;
+  height: 15vh;
+  padding: 5px;
+  margin-bottom: 15px;
+
+}
+
+.input-style{
+padding: 1%;
+
+}
+
+/* Style for Colour cards */
+
+
+.section4cards{
+  display: grid;
+  grid-template-columns: 12fr;
+  margin-top:20px;
+  justify-items: center;
+
+}
+
+
+.deleteBtn{
+
+  padding: 1px;
+  width: 30%;
+
+}
+
+
+
+.block-style4card{
+  width: 25vh;
+  height: 25vh;
+
+
+}
+
+.card-style{
+  width: 40vh;
+  height: 40vh;
+ 
+  
+}
+  
+ }
+
+
+
+
+ @media (min-width:577px) and (max-width:992px){
+
+  .title-style{
+    font-size: 6vh;
+    margin: 30px ;
+    text-align: center;
+  
+    }
+    /* Estilos para la grilla principal */
+    
+    .bigSection{
+         width: 90%;
+    
+    }
+
+    
+  
+    
+    .block-style{
+      width: 18vh;
+      height: 18vh;
+  
+
+    
+    }
+  
+    
+    .boton{
+     width: 100%;
+    
+    }
+  
+    
+    
+    /* Style for Colour cards */
+    
+    
+    .section4cards{
+   
+      grid-template-columns: 12fr;
+      margin-top: 50px;
+     
+    
+    }
+    
+   
+    
+    .deleteBtn{
+    
+margin-bottom: 10px;
+    
+      
+      
+    
+    }
+    
+
+    .block-style4card{
+      width: 27vh;
+      height: 27vh;
+      
+    }
+    
+    .card-style{
+      width: 45vh;
+      height: 45vh;
+    margin-top: 4vh;
+      
+    }
+    
+ 
+    
+    
+
+ }
+ 
